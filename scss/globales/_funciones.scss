@@ -1,0 +1,11 @@
+
+
+@function experimento( $color ) {
+
+    @if( lightness( $color ) > 70 ) {
+        @return violet;
+
+    } @else {
+        @return yellow;
+    }
+}

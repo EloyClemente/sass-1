@@ -1,4 +1,9 @@
+@use 'globales' as *;
 
 footer {
-    background-color: royalblue;
+    background-color: experimento( rgba(255, 255, 255, 0.233) );
+
+    h2 {
+        color: experimento( #000 );
+    }
 }
