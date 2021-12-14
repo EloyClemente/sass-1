@@ -43,6 +43,26 @@ section .container-tarjetas .tarjeta {
   box-shadow: 0 5px 10px -5px #666;
 }
 
+.espacio-10px {
+  padding: 10px !important;
+}
+
+.espacio-20px {
+  padding: 20px !important;
+}
+
+.espacio-30px {
+  padding: 30px !important;
+}
+
+.espacio-40px {
+  padding: 40px !important;
+}
+
+.espacio-50px {
+  padding: 50px !important;
+}
+
 header {
   display: flex;
   flex-wrap: no-wrap;
@@ -177,6 +197,10 @@ footer {
 }
 footer h2 {
   color: yellow;
+}
+
+.prueba {
+  width: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */

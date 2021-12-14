@@ -1,0 +1,11 @@
+
+
+
+$espacios: 10 20 30 40 50;  // $espacios: ( 1, 2, 3, 4, 5 );
+
+@each $espacio in $espacios {
+
+    .espacio-#{ $espacio }px {
+        padding: #{ $espacio }px !important;
+    }
+}

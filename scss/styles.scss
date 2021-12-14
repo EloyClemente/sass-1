@@ -3,3 +3,10 @@
 @use 'section';
 @use 'footer';
 
+$prueba_1: 100;
+$prueba_2: 200;
+$prueba_3: $prueba_1 + $prueba_2 + px;
+
+.prueba {
+    width: $prueba_3;
+}
