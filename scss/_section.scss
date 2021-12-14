@@ -30,13 +30,6 @@ section {
         cursor: e-resize;
     }
 
-
-
-
-
-    
-
-
     .boton-1 {
         @include boton( normal );
     }
@@ -49,17 +42,6 @@ section {
         @include boton( danger );
     }
 
-
-
-
-
-
-
-
-
-
-
-
     .container-tarjetas {
         @include flex( $justify: space-around );
         width: 100%;
@@ -67,6 +49,10 @@ section {
 
         .tarjeta {
             @extend %tarjeta;
+
+            &-parrafo {
+                font-weight: bold;
+            }
         }
     }
 }

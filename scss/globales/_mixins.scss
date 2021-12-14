@@ -7,6 +7,7 @@
 }
 
 @mixin boton( $tipo ) {
+    $fondo: null;
     @include responsive-width( 500px );
     padding: 10px;
     margin: 15px;
@@ -14,25 +15,29 @@
     border-radius: 5px;
     color: #fff;
     box-shadow: 0 5px 10px -5px #666;
+    cursor: pointer;
+    transition: all, .3s;
 
     @if $tipo == normal {
-        background-color: dodgerblue;
+        $fondo: dodgerblue;
     } 
     @else if $tipo == info {
-        background-color: silver;
+        $fondo: silver;
     } 
     @else if $tipo == danger {
-        background-color: crimson;
+        $fondo: crimson;
     } 
     @else {
         @error 'Tipo desconocido.'
+    };
+
+    background-color: $fondo;
+    
+    &:hover {
+        transform: scale(1.05);
+        background-color: lighten( $fondo, 10% );
     }
-}
-
-
-
-
-
+};
 
 @mixin recuadro ( $medida, $color-borde, $color-fondo ) {
     width: $medida;
