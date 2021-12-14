@@ -1,0 +1,78 @@
+@use 'globales' as *;
+
+* html {
+    border: 1px solid red;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    @extend .flexbox;
+
+    .recuadro {
+        @include recuadro( 200px, none, pink );
+        margin-bottom: 100px;
+        box-shadow: 0 5px 10px -3px#c0c0c0;
+
+        p {
+            color: blue;
+            text-align: center;
+        }
+    }
+
+    p {
+        color: red;
+        cursor: e-resize;
+    }
+
+
+
+
+
+    
+
+
+    .boton-1 {
+        @include boton( normal );
+    }
+
+    .boton-2 {
+        @include boton( info );
+    }
+
+    .boton-3 {
+        @include boton( danger );
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .container-tarjetas {
+        @include flex( $justify: space-around );
+        width: 100%;
+        padding-bottom: 50px;
+
+        .tarjeta {
+            @extend %tarjeta;
+        }
+    }
+}
+
+@each $item in facebook, twitter, linkedin {
+    .#{ $item }-icon {
+        color: 'blue';
+    }
+}

@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?ak4x53");
+  src: url("../fonts/icomoon.eot?ak4x53#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ak4x53") format("truetype"), url("../fonts/icomoon.woff?ak4x53") format("woff"), url("../fonts/icomoon.svg?ak4x53#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cuadrado:before {
+  content: "\e900";
+  color: #800080;
+}
+
+section .container-tarjetas .tarjeta {
+  padding: 20px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  background-color: lavender;
+  box-shadow: 0 5px 10px -5px #666;
+}
+
+header {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: orange;
+}
+header .icon-cuadrado {
+  font-size: 100px;
+}
+
+.titulo {
+  color: dodgerblue;
+  font-family: Courier;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+* html {
+  border: 1px solid red;
+}
+
+.flexbox, section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section .recuadro {
+  width: 200px;
+  height: 200px;
+  border: 1px solid none;
+  background-color: pink;
+  margin-bottom: 100px;
+  box-shadow: 0 5px 10px -3px #c0c0c0;
+}
+section .recuadro p {
+  color: blue;
+  text-align: center;
+}
+section p {
+  color: red;
+  cursor: e-resize;
+}
+section .boton-1 {
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 5px 10px -5px #666;
+  background-color: dodgerblue;
+}
+@media (max-width: 500px) {
+  section .boton-1 {
+    width: 100%;
+  }
+}
+section .boton-2 {
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 5px 10px -5px #666;
+  background-color: silver;
+}
+@media (max-width: 500px) {
+  section .boton-2 {
+    width: 100%;
+  }
+}
+section .boton-3 {
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 5px 10px -5px #666;
+  background-color: crimson;
+}
+@media (max-width: 500px) {
+  section .boton-3 {
+    width: 100%;
+  }
+}
+section .container-tarjetas {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.facebook-icon {
+  color: "blue";
+}
+
+.twitter-icon {
+  color: "blue";
+}
+
+.linkedin-icon {
+  color: "blue";
+}
+
+footer {
+  background-color: royalblue;
+}
+
+/*# sourceMappingURL=styles.css.map */

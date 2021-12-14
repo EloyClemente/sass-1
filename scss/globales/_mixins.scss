@@ -1,0 +1,49 @@
+
+
+@mixin responsive-width( $breakpoint ) {
+    @media( max-width: $breakpoint ) {
+        width: 100%;
+    }
+}
+
+@mixin boton( $tipo ) {
+    @include responsive-width( 500px );
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 5px 10px -5px #666;
+
+    @if $tipo == normal {
+        background-color: dodgerblue;
+    } 
+    @else if $tipo == info {
+        background-color: silver;
+    } 
+    @else if $tipo == danger {
+        background-color: crimson;
+    } 
+    @else {
+        @error 'Tipo desconocido.'
+    }
+}
+
+
+
+
+
+
+@mixin recuadro ( $medida, $color-borde, $color-fondo ) {
+    width: $medida;
+    height: $medida;
+    border: 1px solid $color-borde;
+    background-color: $color-fondo;
+}
+
+@mixin flex ( $wrap:no-wrap, $justify:center, $align:center ) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}

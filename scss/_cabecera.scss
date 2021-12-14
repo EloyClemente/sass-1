@@ -1,0 +1,21 @@
+@use 'globales' as *;
+
+header {
+    @include flex( $align:flex-end );
+    background-color: orange;
+
+    .icon-cuadrado {
+        font-size: 100px;
+    }
+}
+
+.titulo {
+    color: $azul-primario;
+
+    font: {
+        family: $courier;
+        size: $titulo-size;
+        weight: 600;
+    }
+}
+
