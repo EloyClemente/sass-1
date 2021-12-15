@@ -1,7 +1,11 @@
 @use 'globales' as *;
 
-* html {
-    border: 1px solid red;
+$prueba_1: 100;
+$prueba_2: 200;
+$prueba_3: $prueba_1 + $prueba_2 + px;
+
+.prueba {
+    width: $prueba_3;
 }
 
 .flexbox {

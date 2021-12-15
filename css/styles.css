@@ -81,8 +81,8 @@ header .icon-cuadrado {
   font-weight: 600;
 }
 
-* html {
-  border: 1px solid red;
+.prueba {
+  width: 300px;
 }
 
 .flexbox, section {
@@ -197,10 +197,6 @@ footer {
 }
 footer h2 {
   color: yellow;
-}
-
-.prueba {
-  width: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
